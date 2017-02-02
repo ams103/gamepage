@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dungeon Crawler RPG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/mystyle.css') }}">
+</head>
+<body>
+<div class="container"
+     style="color: #7e0707;
+     background-color: #757575;
+     font-family: 'Papyrus';
+     text-align: center;
+     border-style:outset;
+     border-width: 10px;
+     border-color: #511818;
+     padding: auto;
+">
+    <h1>Dungeon Crawlers RPG</h1>
+</div>
+<div class="container">
+    <h4>Items</h4>
+    <p><strong>Note: </strong><strong>Click</strong> on the buttons to show the list!</p>
+    <div class="row">
+        <div class="col-xs-2 col md-2">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Gold</a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">0 Gold</div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Inventory</a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">Empty</div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Equipped</a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Head: Naked</li>
+                                <li>Body: Naked</li>
+                                <li>Legs: Naked</li>
+                                <li>Feet: Naked</li>
+                                <li>Left Hand: Fist</li>
+                                <li>Right Hand: Fist</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-2 col md-2">
+            <h4>"Name"</h4>
+            <div class="panel panel-default">
+                <div class="panel-heading">Stats</div>
+                <div class="panel-race">"Race"</div>
+                <div class="panel-attributes">Attributes</div>
+                <div class="panel-str">Strength: x</div>
+                <div class="panel-end">Endurance: x</div>
+                <div class="panel-agi">Agility: x</div>
+                <div class="panel-int">Intelligence: x</div>
+                <div class="panel-wis">Wisdom: x</div>
+                <div class="panel-luc">Luck: x</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container"style="float:center;width: 40%;
+  text-align: center;">
+    <div class="row-fluid">
+        <input type="text" class="form-control" placeholder="Text input">
+    </div>
+</div>
+
+</body>
+</html>
